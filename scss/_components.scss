@@ -1,6 +1,6 @@
 .btn {
   border: 0;
-  padding: 10px 22px;
+  padding: 12px 40px;
   border-radius: 50px;
   font-family: $primary-font;
   cursor: pointer;
@@ -17,5 +17,13 @@
   &--primary,
   &--secondary {
     color: #fff;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $secondary1;
+  &--primary {
+    color: $primary1;
   }
 }
