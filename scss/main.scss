@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .headline {
   color: $secondary1;
   line-height: 1.25;
@@ -35,13 +41,12 @@ img {
     font-size: 1.8rem;
   }
   &__desc {
-    // font-size: 0.93rem;
     margin-bottom: 30px;
   }
 }
 
 .flex-btns {
-  height: 90px;
+  height: 94px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,15 +57,9 @@ img {
 .sec-3,
 .sec-4,
 .sec-5,
-.sec-6 {
+.sec-6,
+.sec-7 {
   padding: 5% 10%;
-}
-
-.tools,
-.companies {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .tool {
@@ -79,6 +78,143 @@ img {
     &__logo {
       width: 40%;
     }
+  }
+}
+
+.cta {
+  &__title {
+    font-size: 1.6rem;
+  }
+  &__paragraph {
+    margin-bottom: 40px;
+  }
+}
+
+footer {
+  margin-top: 20%;
+  padding: 12% 10% 2%;
+  background-color: lighten($secondary2, 30);
+  .footer-logo {
+    width: 18%;
+    margin: auto;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  .footer-link {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  margin: 0 18px;
+  &__icon {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: url("../images/bg-header-desktop.png") no-repeat center center /
+      cover;
+    &__logo {
+      width: 10%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .flex-btns {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 390px;
+    margin: auto;
+  }
+
+  .sec-2 {
+    padding: 5% 0;
+    .row div:first-child img {
+      margin-left: -30px;
+    }
+    .row div:last-child {
+      text-align: left;
+      padding: 2% 22% 2% 7%;
+    }
+    .headline {
+      margin-bottom: 0;
+    }
+  }
+
+  .sec-4 img {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+  .tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 80px;
+    .tool {
+      margin: 0;
+      flex-basis: 33%;
+      padding: 0 20px;
+      &__icon {
+        width: 10%;
+      }
+    }
+  }
+
+  .companies {
+    flex-direction: row;
+    justify-content: space-between;
+    .company__logo {
+      width: 80%;
+    }
+  }
+
+  .col {
+    flex: 1;
+  }
+  .double-col {
+    flex: 2;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    .footer-logo {
+      margin: 0;
+    }
+    .footer-links {
+      margin: 0;
+      text-align: left;
+      .footer-link {
+        margin: 0;
+        flex-basis: 33%;
+      }
+    }
+  }
+  .attribution {
+    text-align: center;
+    margin-bottom: 0;
   }
 }
 
