@@ -136,6 +136,13 @@ footer {
       width: 10%;
       margin-bottom: 20px;
     }
+    &__tagline {
+      font-size: 2.16rem;
+      margin-bottom: 0;
+    }
+    &__desc {
+      padding: 0 25%;
+    }
   }
 
   .flex-btns {
@@ -144,6 +151,12 @@ footer {
     justify-content: space-between;
     width: 390px;
     margin: auto;
+  }
+
+  .sec-1 p,
+  .sec-3 p,
+  .sec-7 p {
+    padding: 0 22%;
   }
 
   .sec-2 {
