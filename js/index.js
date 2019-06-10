@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let tl1 = new TimelineMax();
 
-  tl1.from(section2Img, 6, { opacity: 0, x: "-100%" });
+  tl1.from(section2Img, 0.7, { x: "-100%" });
 
   let sec2Scene = new ScrollMagic.Scene({
     triggerElement: section2,
-    duration: 170,
+    duration: 0,
     reverse: false
   })
     .setTween(tl1)
@@ -22,12 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let tl2 = new TimelineMax();
 
-  tl2.from(section4Img, 5, { scale: 0.5 });
+  tl2.from(section4Img, 0.8, { scale: 0.5 });
 
   let sec4Scene = new ScrollMagic.Scene({
     triggerElement: section4,
-    duration: 100,
-    offset: 100,
+    duration: 0,
     reverse: false
   })
     .setTween(tl2)
